@@ -252,12 +252,12 @@ local function runTransfer(targetPlayer)
 
     local function getConfirmDelay(itemCount)
         if itemCount <= 2 then return 5
-        elseif itemCount == 3 then return 6
-        elseif itemCount == 4 then return 8
-        elseif itemCount == 5 then return 10
-        elseif itemCount == 6 then return 12
-        elseif itemCount == 7 then return 14
-        else return 16 end
+        elseif itemCount == 3 then return 1
+        elseif itemCount == 4 then return 1
+        elseif itemCount == 5 then return 1
+        elseif itemCount == 6 then return 1
+        elseif itemCount == 7 then return 11
+        else return 1 end
     end
 
     local function getTradablePets(limit)
